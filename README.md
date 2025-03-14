@@ -1,1 +1,1 @@
-fucking pice of shit
+fucking pice 
