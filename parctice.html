@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test"></div>
+    <script>
+
+    //     let timeRemain =10;
+    //    let interval = setInterval(timer, 1000);
+    //     function timer(){
+    //         if(timeRemain <0){
+    //             clearInterval(interval);
+    //     }else{
+    //         console.log(timeRemain);
+    //         timeRemain--;
+    //     }
+
+    //     }
+   
+    let box =document.getElementById("test");
+    let pos =0;
+    let posleft=setInterval(ani,1000);
+    function ani(){
+        if(pos===100){
+            clearInterval(posleft)
+        }else{
+            pos +=20;
+            box.style.left= `${pos}px`;
+        }
+    }
+
+        
+    </script>
+</body>
+</html>
